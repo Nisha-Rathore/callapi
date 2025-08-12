@@ -23,6 +23,18 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;      /* equal width */
+  height: 60px;     /* equal height */
+  border-radius: 50%; /* force circle shape */
+}
+.success{
+  background-color: rgb(71, 234, 71);
+  color: white;
+}
 
 .App-link {
   color: #61dafb;
