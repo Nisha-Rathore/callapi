@@ -28,10 +28,10 @@ function App() {
    <> 
    {data.length > 0 && data.map((item,i)=>(
     <div key={i}>
-    <h1 style={{color:"skyblue"}}>Data of user {item.id}</h1>
-     <div style={{border:"1px solid yellow",backgroundColor:"pink",margin:"5px", padding:"25px"}}>
+    <div style={{color:"#5F81E4"}} className='font-semibold text-5xl '>Data of user {item.id}</div>
+     <div style={{border:"1px solid yellow",margin:"5px", padding:"25px"}} className='bg-gradient-to-r from-[#f6f6d9] via-[#47e4e0] to-[#5f81e4]'>
        <div style={{display:'flex', alignItems:'center' ,justifyContent:'space-between'}}>
-         <h3>User id = {item.id}</h3>
+         <div className='text-2xl text-green-700'>User id = {item.id}</div>
          <div>
           <Btn btnType='success'  btnText = {<PiEyes  ></PiEyes>}/>
           <Btn btnType='danger' btnText = {<MdDelete></MdDelete>}/>
@@ -40,10 +40,10 @@ function App() {
          </div>
        </div>
     
-    <h3>User name = {item.name}</h3>
-    <h3>User username = {item.username}</h3>
-    <h3>User email = {item.email}</h3>
-    <h3>User website = {item.website}</h3>
+    <div className='text-xl text-green-700'>User name = {item.name}</div>
+    <div className='text-xl text-green-700'>User username = {item.username}</div>
+    <div className='text-xl text-green-700'>User email = {item.email}</div>
+    <div className='text-xl text-green-700'>User website = {item.website}</div>
     </div>
     </div>
    ))}
